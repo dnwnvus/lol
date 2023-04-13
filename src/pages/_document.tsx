@@ -1,9 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document() {
+const Document = () => {
   return (
-    <Html lang="en">
-      <Head />
+    <Html lang="en" style={{ background: '#5383e8' }}>
+      <Head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+      </Head>
       <body>
         <Main />
         <NextScript />
@@ -11,3 +13,5 @@ export default function Document() {
     </Html>
   )
 }
+
+export default Document;
