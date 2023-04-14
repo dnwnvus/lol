@@ -16,7 +16,7 @@ const nav_item: nav_item_type[] = [
     path: '/create'
   }
 ]
-// css 작성 순서
+
 const NavMenu = styled.nav`
   height: 35px;
   padding: 1rem;

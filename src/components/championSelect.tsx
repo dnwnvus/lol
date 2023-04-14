@@ -4,7 +4,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import { useRecoilValue } from "recoil";
-import { selectedChampion, championStatus } from "atom";
+import { selectedChampion, championStatus, championTags } from "atom";
 import { championInfo } from "./data/champion_data";
 
 const SelectContainer = styled.div`
@@ -47,7 +47,7 @@ const PositionListContainer = styled.div`
   right: 100px;
 `
 
-const ChampionStatusList = styled.ul`
+const ChampionInfo = styled.ul`
   list-style: none;
   height: 50%; 
   width: 40%;
@@ -62,7 +62,9 @@ const ChampionSelect = () => {
   const [positions, setPositions] = useState(positionData);
   const select = useRecoilValue(selectedChampion);
   const status = useRecoilValue(championStatus)
+  const tags = useRecoilValue(championTags)
   const info: any = championInfo.find(champ => champ.name === select?.name)
+  console.log(select?.passive)
 
   const onToggle = (id: any) => {
     setPositions(positions.map((position: any) => 
@@ -74,7 +76,7 @@ const ChampionSelect = () => {
       {select ?
         <ChampionFigure>
           <Image 
-            src={`/${select.image.full}`}
+            src={`/championImages/${select.image.full}`}
             alt={select.id}
             key={select.key}
             width={125}
@@ -93,14 +95,16 @@ const ChampionSelect = () => {
                       : <SubPosition>부 역할군</SubPosition>
                     }
                     <Image 
-                      src={`/${tag}.webp`}
+                      src={`/tags/${tag}.webp`}
                       alt={tag}
                       width={50}
                       height={50}
                     />
-                    <div>
-                      {tag}
-                    </div>
+                    {tags && tags.map((v: any) => {
+                      return (
+                        v.includes(tag) && <div key={v}>{v[1]}</div>
+                      )
+                    })}
                   </div>
                 )
               })}
@@ -114,12 +118,12 @@ const ChampionSelect = () => {
         <div>챔피언이 선택되지 않았습니다.</div>
       }
       {select && 
-        <ChampionStatusList>
+        <ChampionInfo>
           {status && status.map((stat, index) => {
             return (
               <ChampionStatus key={index}>
                 <Image 
-                  src={`/${stat[0]}.webp`}
+                  src={`/status/${stat[0]}.webp`}
                   alt={stat[1]}
                   width={30}
                   height={30}
@@ -127,7 +131,7 @@ const ChampionSelect = () => {
                 />
                 {stat[1]}
                 <Image 
-                  src={`/graph_${info.status[stat[0]]}.webp`}
+                  src={`/graph/graph_${info.status[stat[0]]}.webp`}
                   alt={info.status.attack}
                   width={130}
                   height={6}
@@ -135,8 +139,12 @@ const ChampionSelect = () => {
                 />
             </ChampionStatus>
             )
-          })} 
-        </ChampionStatusList>
+          })}
+          {/* {select.spells.map((spell: string) => {
+            return (
+            )
+          })} */}
+        </ChampionInfo>
       }
     </SelectContainer>
   )

@@ -10,7 +10,6 @@ const Container = styled.main`
 const Layout = ({ children }: any) => {
   return (
     <div style={{ background: '#5383e8' }}>
-      {/* <Nav /> */}
       <Container>
         <div>
           <Nav />

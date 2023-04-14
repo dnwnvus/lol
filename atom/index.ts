@@ -2,6 +2,8 @@ import { atom } from "recoil";
 import { data } from "@/components/data/champion_data";
 
 export type selectedType = {
+  spells: any;
+  passive: any;
   title: string;
   tags: string[];
   name: string;
@@ -34,4 +36,16 @@ export const championStatus = atom({
     ['movement', '이동'],
     ['assistant', '보조']
   ],
+})
+
+export const championTags = atom({
+  key: 'tags',
+  default: [
+    ['Assassin', '암살자'],
+    ['Fighter', '전사'],
+    ['Marksman', '원거리'],
+    ['Mage', '마법사'],
+    ['Tank', '탱커'],
+    ['Support', '서포터']
+  ]
 })

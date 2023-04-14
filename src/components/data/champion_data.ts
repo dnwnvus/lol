@@ -1,5 +1,5 @@
 export const data = Object
-  .values(require('champion.json').data)
+  .values(require('championFull.json').data)
   .sort((a:any, b:any) => a.name > b.name ? 1 : -1)
 
 export interface championInfoType {

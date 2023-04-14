@@ -8,7 +8,7 @@ type PositionPropsType = {
 const Position = ({ position }: PositionPropsType) => {
   return (
     <Image
-      src={`/${position.src}`}
+      src={`/positions/${position.src}`}
       alt={position.name}
       key={position.id}
       width={25}

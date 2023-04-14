@@ -4,12 +4,13 @@ import { useSetRecoilState } from "recoil";
 import { selectedChampion } from "atom/index";
 
 const ChampionImage = styled.li`
-  margin: 5px;
+  margin: 6px;
   list-style: none;
 `
 
 const ChampionName = styled.div`
   font-size: 12px;
+  max-width: 100px;
 `
 
 type ChampionProps = {
@@ -27,7 +28,7 @@ const Champion = ({ champion }: ChampionProps) => {
   return (
     <ChampionImage key={champion.id}>
       <Image
-        src={`/${champion.image.full}`}
+        src={`/championImages/${champion.image.full}`}
         alt={champion.id}
         key={champion.key}
         width={100}
