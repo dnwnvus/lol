@@ -58,14 +58,20 @@ const ChampionStatus = styled.li`
   align-items: center;
 `
 
+const ChampionSpells = styled.div`
+  margin-top: 50px;
+  height: 75px;
+  display: flex;
+`
+
 const ChampionSelect = () => {
   const [positions, setPositions] = useState(positionData);
   const select = useRecoilValue(selectedChampion);
   const status = useRecoilValue(championStatus)
   const tags = useRecoilValue(championTags)
   const info: any = championInfo.find(champ => champ.name === select?.name)
-  console.log(select?.passive)
 
+  console.log(select?.spells)
   const onToggle = (id: any) => {
     setPositions(positions.map((position: any) => 
     position.id === id ? {...positions, active: !position.active} : position))
@@ -140,10 +146,35 @@ const ChampionSelect = () => {
             </ChampionStatus>
             )
           })}
-          {/* {select.spells.map((spell: string) => {
-            return (
-            )
-          })} */}
+          <ChampionSpells>
+            <Image 
+              src={`/passive/${select.passive.image.full}`}
+              alt={select.passive.name}
+              width={50}
+              height={50}
+              style={{ marginRight: '20px' }}
+            />
+            {select.spells.map((spell: any) => {
+              return (
+                <div key={spell.id} style={{ 
+                  width: '100%',
+                  height: 'fit-content',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  marginLeft: '10px' }}>
+                  <Image 
+                    src={`/spells/${spell.image.full}`}
+                    alt={spell.name}
+                    width={50}
+                    height={50}
+                    key={spell.id}
+                  />
+                  <p style={{ margin: '0' }}>q</p>
+                </div>
+              )
+            })}
+          </ChampionSpells>
         </ChampionInfo>
       }
     </SelectContainer>

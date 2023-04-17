@@ -13,6 +13,14 @@ export interface championInfoType {
     movement: number;
     assistant: number;
   }
+  spells: {
+    p: string[]
+    q: string[]
+    w: string[]
+    e: string[]
+    r: string[]
+    cc: string[]
+  }
 }
 
 // damage_category * status.attack (물리, 마법, 혼합) 
@@ -32,6 +40,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: ['물리 피해', '체력 회복', '재사용 대기시간 감소'],
+      q: ['물리 피해', '이동 속도 상승', '공격력 증가', '유체화 상태'],
+      w: ['스킬 방어', '공격 속도 상승'],
+      e: ['마법 피해', '이동 속도 상승', '공포'],
+      r: ['물리 피해', '저지 불가', '시야 공유 차단', '돌진'],
+      cc: ['공포', '시야공유 차단']
     }
   },
   {
@@ -44,6 +60,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 2
+    },
+    spells: {
+      p: ['이동 속도 상승', '절대 시야'],
+      q: ['마법 피해', '거리 비례 피해 증가', '잃은 체력 비례 피해 증가'],
+      w: ['마법 피해', '재사용 대기시간 감소', '덫'],
+      e: ['체력 회복', '공격 속도 상승', '마법 피해'],
+      r: ['재사용 대기시간 초기화', '변신'],
+      cc: ['절대 시야']
     }
   },
   {
@@ -56,6 +80,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: ['이동 속도 상승', '공격력 증가'],
+      q: ['물리 피해', '공격 속도 상승', '치명타'],
+      w: ['마법 피해', '체력 회복', '군중 제어 해제'],
+      e: ['물리 피해', '둔화', '속박'],
+      r: ['물리 피해', '이동 속도 상승', '절대 시야', '방어력 감소'],
+      cc: ['군중 제어 해제', '둔화', '속박', '절대 시야']
     }
   },
   {
@@ -68,6 +100,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: ['마법 피해', ],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -80,6 +120,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -92,6 +140,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -104,6 +160,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -116,6 +180,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -128,6 +200,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -140,6 +220,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -152,6 +240,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -164,6 +260,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -176,6 +280,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -188,6 +300,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -200,6 +320,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -212,6 +340,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -224,6 +360,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -236,6 +380,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -248,6 +400,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -260,6 +420,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -272,6 +440,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -284,6 +460,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -296,6 +480,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -308,6 +500,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -320,6 +520,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -332,6 +540,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -344,6 +560,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -356,6 +580,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -368,6 +600,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -380,6 +620,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -392,6 +640,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -404,6 +660,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -416,6 +680,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -428,6 +700,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -440,6 +720,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -452,6 +740,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -464,6 +760,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -476,6 +780,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -488,6 +800,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -500,6 +820,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -512,6 +840,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -524,6 +860,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -536,6 +880,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -548,6 +900,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -560,6 +920,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -572,6 +940,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -584,6 +960,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -596,6 +980,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -608,6 +1000,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -620,6 +1020,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -632,6 +1040,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -644,6 +1060,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -656,6 +1080,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -668,6 +1100,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -680,6 +1120,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -692,6 +1140,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -704,6 +1160,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -716,6 +1180,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -728,6 +1200,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -740,6 +1220,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -752,6 +1240,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -764,6 +1260,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -776,6 +1280,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -788,6 +1300,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -800,6 +1320,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -812,6 +1340,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -824,6 +1360,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -836,6 +1380,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -848,6 +1400,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -860,6 +1420,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -872,6 +1440,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -884,6 +1460,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -896,6 +1480,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -908,6 +1500,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -920,6 +1520,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 0
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -932,6 +1540,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -944,6 +1560,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -956,6 +1580,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -968,6 +1600,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -980,6 +1620,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -992,6 +1640,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1004,6 +1660,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1016,6 +1680,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1028,6 +1700,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1040,6 +1720,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1052,6 +1740,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1064,6 +1760,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1076,6 +1780,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1088,6 +1800,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1100,6 +1820,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1112,6 +1840,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1124,6 +1860,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1136,6 +1880,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1148,6 +1900,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1160,6 +1920,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1172,6 +1940,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1184,6 +1960,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1196,6 +1980,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1208,6 +2000,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1220,6 +2020,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1232,6 +2040,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1244,6 +2060,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1256,6 +2080,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1268,6 +2100,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1280,6 +2120,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1292,6 +2140,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1304,6 +2160,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1316,6 +2180,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1328,6 +2200,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1340,6 +2220,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1352,6 +2240,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1364,6 +2260,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1376,6 +2280,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1388,6 +2300,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1400,6 +2320,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1412,6 +2340,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1424,6 +2360,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1436,6 +2380,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1448,6 +2400,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1460,6 +2420,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1472,6 +2440,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1484,6 +2460,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1496,6 +2480,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1508,6 +2500,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1520,6 +2520,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1532,6 +2540,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1544,6 +2560,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1556,6 +2580,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1568,6 +2600,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1580,6 +2620,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
 
@@ -1593,6 +2641,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1605,6 +2661,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1617,6 +2681,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1629,6 +2701,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1641,6 +2721,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1653,6 +2741,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1665,6 +2761,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1677,6 +2781,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1689,6 +2801,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1701,6 +2821,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1713,6 +2841,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1725,6 +2861,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1737,6 +2881,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1749,6 +2901,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1761,6 +2921,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 3,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1773,6 +2941,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1785,6 +2961,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1797,6 +2981,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1809,6 +3001,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1821,6 +3021,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 2
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1833,6 +3041,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1845,6 +3061,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1857,6 +3081,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 2,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1869,6 +3101,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 1,
       movement: 3,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1881,6 +3121,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 3,
       movement: 1,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1893,6 +3141,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 2,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1905,6 +3161,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1917,6 +3181,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 1,
       assistant: 3
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
   {
@@ -1929,6 +3201,14 @@ export const championInfo: championInfoType[] = [
       crowd_control: 2,
       movement: 3,
       assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
+      cc: ['']
     }
   },
 ]
