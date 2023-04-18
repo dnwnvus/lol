@@ -4,8 +4,9 @@ import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import { useRecoilValue } from "recoil";
-import { selectedChampion, championStatus, championTags } from "atom";
+import { selectedChampion, championStatus, championTags, spellCommand } from "atom";
 import { championInfo } from "./data/champion_data";
+import ChampionSpell from "./championSpell";
 
 const SelectContainer = styled.div`
   border: 1px solid #4171d6;
@@ -15,30 +16,34 @@ const SelectContainer = styled.div`
   background: #ffffff;
   padding: 3rem;
   display: grid;
-  grid-template-columns: 300px 800px;
+  grid-template-columns: 300px 600px 300px;
   position: relative;
   font-size: 18px;
 `
 
 const ChampionFigure = styled.figure`
-  height: 200px;
+  width: 100%;
+  align-items: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+`
+
+const ChampionName = styled.h3`
+  margin: 10px;
 `
 
 const ChampionRole = styled.div`
-  margin-top: 15px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
 `
 
-const MainPosition = styled.div`
-  margin-bottom: 15px;
-  color: green;
-`
-
-const SubPosition = styled.div`
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 15px;
-  color: blue;
+const TagList = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 5px;
 `
 
 const PositionListContainer = styled.div`
@@ -58,7 +63,7 @@ const ChampionStatus = styled.li`
   align-items: center;
 `
 
-const ChampionSpells = styled.div`
+const ChampionSpellList = styled.div`
   margin-top: 50px;
   height: 75px;
   display: flex;
@@ -69,53 +74,48 @@ const ChampionSelect = () => {
   const select = useRecoilValue(selectedChampion);
   const status = useRecoilValue(championStatus)
   const tags = useRecoilValue(championTags)
+  const command = useRecoilValue(spellCommand)
   const info: any = championInfo.find(champ => champ.name === select?.name)
 
-  console.log(select?.spells)
   const onToggle = (id: any) => {
     setPositions(positions.map((position: any) => 
     position.id === id ? {...positions, active: !position.active} : position))
   }
-  
   return (
     <SelectContainer>
       {select ?
         <ChampionFigure>
           <Image 
-            src={`/championImages/${select.image.full}`}
+            src={`/loading/${select.id}_0.jpg`}
             alt={select.id}
             key={select.key}
-            width={125}
-            height={125}
+            width={250}
+            height={400}
           />
-          <div>
-            <h3>
-              {select.name}
-            </h3>
-            <ChampionRole>
-              {select.tags.map((tag, index) => {
-                return (
-                  <div key={index}>
-                    {index === 0
-                      ? <MainPosition>주 역할군</MainPosition>
-                      : <SubPosition>부 역할군</SubPosition>
-                    }
-                    <Image 
-                      src={`/tags/${tag}.webp`}
-                      alt={tag}
-                      width={50}
-                      height={50}
-                    />
-                    {tags && tags.map((v: any) => {
-                      return (
-                        v.includes(tag) && <div key={v}>{v[1]}</div>
-                      )
-                    })}
-                  </div>
-                )
-              })}
-            </ChampionRole>
-          </div>
+          <ChampionName>
+            {select.name}
+          </ChampionName>
+          <ChampionRole>
+            {select.tags.map((tag: string, index: number) => {
+              return (
+                <TagList key={index}>
+                  <Image 
+                    src={`/tags/${tag}.webp`}
+                    alt={tag}
+                    width={50}
+                    height={50}
+                  />
+                  {tags && tags.map((v: any, index: number) => {
+                    return (
+                      <div key={index} style={{ color: `${v[2]}`}}>
+                        {v.includes(tag) && v[1]}
+                      </div>
+                    )
+                  })}
+                </TagList>
+              )
+            })}
+          </ChampionRole>
           <PositionListContainer>
             <PositionList positionData={positions}/>
           </PositionListContainer>
@@ -146,35 +146,32 @@ const ChampionSelect = () => {
             </ChampionStatus>
             )
           })}
-          <ChampionSpells>
-            <Image 
-              src={`/passive/${select.passive.image.full}`}
-              alt={select.passive.name}
-              width={50}
-              height={50}
-              style={{ marginRight: '20px' }}
+          <ChampionSpellList>
+            <ChampionSpell 
+              spell={select.passive} 
+              command={'P'} 
+              type={'passive'}
             />
-            {select.spells.map((spell: any) => {
+            {select.spells.map((spell: any, index: number) => {
               return (
-                <div key={spell.id} style={{ 
-                  width: '100%',
-                  height: 'fit-content',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  marginLeft: '10px' }}>
-                  <Image 
-                    src={`/spells/${spell.image.full}`}
-                    alt={spell.name}
-                    width={50}
-                    height={50}
-                    key={spell.id}
-                  />
-                  <p style={{ margin: '0' }}>q</p>
-                </div>
+                <ChampionSpell 
+                  key={spell.id} 
+                  spell={spell} 
+                  type={'spells'} 
+                  command={command[index]}
+                />
               )
             })}
-          </ChampionSpells>
+          </ChampionSpellList>
+          <div>
+            {info && info.spells.cc.map((cc: any, index: number) => {
+              return (
+                <span key={index}>
+                  #{cc}
+                </span>
+              )
+            })}
+          </div>
         </ChampionInfo>
       }
     </SelectContainer>

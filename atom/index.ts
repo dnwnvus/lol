@@ -41,11 +41,16 @@ export const championStatus = atom({
 export const championTags = atom({
   key: 'tags',
   default: [
-    ['Assassin', '암살자'],
-    ['Fighter', '전사'],
-    ['Marksman', '원거리'],
-    ['Mage', '마법사'],
-    ['Tank', '탱커'],
-    ['Support', '서포터']
+    ['Assassin', '암살자', 'red'],
+    ['Fighter', '전사', 'brown'],
+    ['Marksman', '원거리', 'green'],
+    ['Mage', '마법사', 'blue'],
+    ['Tank', '탱커', 'purple'],
+    ['Support', '서포터', '#005666']
   ]
+})
+
+export const spellCommand = atom({
+  key: 'commands',
+  default: ['Q', 'W', 'E', 'R']
 })
