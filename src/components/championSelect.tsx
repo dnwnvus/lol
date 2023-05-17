@@ -76,11 +76,13 @@ const ChampionSelect = () => {
   const tags = useRecoilValue(championTags)
   const command = useRecoilValue(spellCommand)
   const info: any = championInfo.find(champ => champ.name === select?.name)
-
+  const cc: any = []
+  
   const onToggle = (id: any) => {
     setPositions(positions.map((position: any) => 
     position.id === id ? {...positions, active: !position.active} : position))
   }
+  
   return (
     <SelectContainer>
       {select ?
@@ -163,15 +165,16 @@ const ChampionSelect = () => {
               )
             })}
           </ChampionSpellList>
-          <div>
-            {info && info.spells.cc.map((cc: any, index: number) => {
+          {/* <div>
+            {info && info.spells.map((spell: any, index: number) => {
+              cc.concat(spell)
               return (
                 <span key={index}>
-                  #{cc}
+                  #{spell}
                 </span>
               )
             })}
-          </div>
+          </div> */}
         </ChampionInfo>
       }
     </SelectContainer>

@@ -1,6 +1,6 @@
 export const data = Object
   .values(require('championFull.json').data)
-  .sort((a:any, b:any) => a.name > b.name ? 1 : -1)
+  .sort((a:any, b:any) => a.name > b.name ? 1 : -1) 
 
 export interface championInfoType {
   name: string;
@@ -42,12 +42,12 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: ['물리 피해', '체력 회복', '재사용 대기시간 감소'],
-      q: ['물리 피해', '이동 속도 상승', '공격력 증가', '유체화 상태'],
-      w: ['스킬 방어', '공격 속도 상승'],
-      e: ['마법 피해', '이동 속도 상승', '공포 걸린 적에게 이동 시 이동속도 상승', '공포'],
-      r: ['물리 피해', '저지 불가', '시야 공유 차단', '돌진'],
-      cc: ['공포', '시야공유 차단']
+      p: [''],
+      q: [''],
+      w: [''],
+      e: ['공포'],
+      r: ['저지 불가', '시야 공유 차단'],
+      cc: ['공포', '저지 불가', '시야 공유 차단']
     }
   },
   {
@@ -62,11 +62,11 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: ['이동 속도 상승', '절대 시야'],
-      q: ['마법 피해', '거리 비례 피해 증가', '잃은 체력 비례 피해 증가'],
-      w: ['마법 피해', '재사용 대기시간 감소', '덫'],
-      e: ['체력 회복', '공격 속도 상승', '마법 피해'],
-      r: ['재사용 대기시간 초기화', '변신'],
+      p: ['절대 시야'],
+      q: [''],
+      w: [''],
+      e: [''],
+      r: [''],
       cc: ['절대 시야']
     }
   },
@@ -82,11 +82,11 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: ['이동 속도 상승', '공격력 증가'],
-      q: ['물리 피해', '공격 속도 상승', '치명타'],
-      w: ['마법 피해', '체력 회복', '군중 제어 해제'],
-      e: ['물리 피해', '둔화', '속박'],
-      r: ['물리 피해', '이동 속도 상승', '절대 시야', '방어력 감소'],
+      p: [''],
+      q: [''],
+      w: ['군중 제어 해제'],
+      e: ['둔화', '속박'],
+      r: ['절대 시야'],
       cc: ['군중 제어 해제', '둔화', '속박', '절대 시야']
     }
   },
@@ -102,12 +102,12 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: ['마법 피해', ],
+      p: ['투명'],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      e: ['절대 시야', '속박'],
+      r: ['절대 시야', '속박'],
+      cc: ['투명', '절대 시야', '속박']
     }
   },
   {
@@ -123,11 +123,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['대상 지정 불가'],
       w: [''],
       e: [''],
-      r: [''],
-      cc: ['']
+      r: ['둔화 효과 면역'],
+      cc: ['대상 지정 불가', '둔화 효과 면역']
     }
   },
   {
@@ -142,12 +142,12 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
+      p: ['대상 지정 불가', '지배'],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      w: ['기절'],
+      e: ['위장'],
+      r: ['둔화', '넉백'],
+      cc: ['대상 지정 불가', '지배', '기절', '위장', '둔화', '넉백']
     }
   },
   {
@@ -163,11 +163,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      q: ['투명'],
+      w: ['공포'],
+      e: ['둔화'],
+      r: ['대상 지정 불가', '공포'],
+      cc: ['투명', '공포', '대상 지정 불가', '둔화']
     }
   },
   {
@@ -183,11 +183,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['둔화'],
+      w: ['투명'],
       e: [''],
       r: [''],
-      cc: ['']
+      cc: ['둔화', '투명']
     }
   },
   {
@@ -203,11 +203,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['둔화'],
+      w: ['둔화', '기절'],
       e: [''],
-      r: [''],
-      cc: ['']
+      r: ['경직'],
+      cc: ['둔화', '기절', '경직']
     }
   },
   {
@@ -223,11 +223,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['에어본'],
       w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      e: ['저지 불가'],
+      r: ['그랩'],
+      cc: ['에어본', '저지 불가', '그랩']
     }
   },
   {
@@ -242,12 +242,12 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: [''],
+      p: ['위장'],
       q: [''],
-      w: [''],
+      w: ['둔화', '매혹'],
       e: [''],
-      r: [''],
-      cc: ['']
+      r: ['대상 지정 불가'],
+      cc: ['위장', '둔화', '매혹', '대상 지정 불가']
     }
   },
   {
@@ -265,9 +265,9 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      e: ['둔화'],
+      r: ['대상 지정 불가'],
+      cc: ['둔화', '대상 지정 불가']
     }
   },
   {
@@ -283,11 +283,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['침묵(정신 집중 해제)'],
       w: [''],
-      e: [''],
+      e: ['둔화'],
       r: [''],
-      cc: ['']
+      cc: ['침묵(정신 집중 해제)', '둔화']
     }
   },
   {
@@ -302,12 +302,12 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
+      p: ['둔화'],
       q: [''],
-      w: [''],
+      w: ['둔화'],
       e: [''],
-      r: [''],
-      cc: ['']
+      r: ['투명'],
+      cc: ['둔화', '투명']
     }
   },
   {
@@ -331,6 +331,66 @@ export const championInfo: championInfoType[] = [
     }
   },
   {
+    name: '키아나',
+    damage_category: '물리',
+    difficulty: 3,
+    status: {
+      attack: 3,
+      defense: 1,
+      crowd_control: 2,
+      movement: 2,
+      assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: ['속박', '둔화', '투명'],
+      w: [''],
+      e: [''],
+      r: ['넉백', '기절'],
+      cc: ['속박', '둔화', '투명', '넉백', '기절']
+    }
+  },
+  {
+    name: '탈론',
+    damage_category: '물리',
+    difficulty: 2,
+    status: {
+      attack: 3,
+      defense: 1,
+      crowd_control: 1,
+      movement: 2,
+      assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: ['둔화'],
+      e: [''],
+      r: ['투명'],
+      cc: ['둔화', '투명']
+    }
+  },
+  {
+    name: '피즈',
+    damage_category: '마법',
+    difficulty: 3,
+    status: {
+      attack: 3,
+      defense: 1,
+      crowd_control: 2,
+      movement: 3,
+      assistant: 1
+    },
+    spells: {
+      p: [''],
+      q: [''],
+      w: [''],
+      e: ['대상 지정 불가', '둔화'],
+      r: ['절대 시야', '둔화', '에어본', '넉백'],
+      cc: ['대상 지정 불가', '둔화', '절대 시야', '에어본', '넉백']
+    }
+  },
+  {
     name: '가렌',
     damage_category: '물리',
     difficulty: 1,
@@ -343,11 +403,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['둔화 효과 해제', '침묵'],
+      w: ['강인함'],
       e: [''],
       r: [''],
-      cc: ['']
+      cc: ['둔화 효과 해제', '침묵', '강인함']
     }
   },
   {
@@ -364,10 +424,10 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      w: ['방해 효과 해제'],
+      e: ['둔화'],
+      r: ['둔화'],
+      cc: ['방해 효과 해제', '둔화']
     }
   },
   {
@@ -383,11 +443,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      e: ['넉백', '기절'],
+      r: ['넉백'],
+      cc: ['둔화', '넉백', '기절']
     }
   },
   {
@@ -404,10 +464,10 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['대상 지정 불가'],
       e: [''],
-      r: [''],
-      cc: ['']
+      r: ['둔화'],
+      cc: ['대상 지정 불가', '둔화']
     }
   },
   {
@@ -423,11 +483,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      q: ['둔화'],
+      w: ['기절'],
+      e: ['둔화'],
+      r: ['넉백', '둔화', '기절'],
+      cc: ['둔화', '기절', '넉백']
     }
   },
   {
@@ -444,10 +504,10 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['둔화', '공격 속도 감소'],
       e: [''],
       r: [''],
-      cc: ['']
+      cc: ['둔화']
     }
   },
   {
@@ -466,8 +526,8 @@ export const championInfo: championInfoType[] = [
       q: [''],
       w: [''],
       e: [''],
-      r: [''],
-      cc: ['']
+      r: ['그랩'],
+      cc: ['그랩']
     }
   },
   {
@@ -484,10 +544,10 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['둔화'],
+      e: ['그랩', '에어본', '둔화'],
       r: [''],
-      cc: ['']
+      cc: ['둔화', '그랩', '에어본']
     }
   },
   {
@@ -506,8 +566,8 @@ export const championInfo: championInfoType[] = [
       q: [''],
       w: [''],
       e: [''],
-      r: [''],
-      cc: ['']
+      r: ['그랩', '둔화'],
+      cc: ['그랩', '둔화']
     }
   },
   {
@@ -525,9 +585,9 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      e: ['둔화'],
+      r: ['둔화'],
+      cc: ['둔화']
     }
   },
   {
@@ -544,10 +604,10 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['기절'],
       e: [''],
       r: [''],
-      cc: ['']
+      cc: ['기절']
     }
   },
   {
@@ -564,10 +624,10 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['에어본'],
       e: [''],
-      r: [''],
-      cc: ['']
+      r: ['대상 지정 불가', '저지 불가'],
+      cc: ['에어본', '대상 지정 불가', '저지 불가']
     }
   },
   {
@@ -583,11 +643,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['절대 시야'],
       w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      e: ['둔화'],
+      r: ['넉백', '에어본', '속박'],
+      cc: ['절대 시야', '둔화', '넉백', '에어본', '속박']
     }
   },
   {
@@ -603,11 +663,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['넉백'],
+      w: ['기절'],
       e: [''],
       r: [''],
-      cc: ['']
+      cc: ['넉백', '기절']
     }
   },
   {
@@ -625,9 +685,9 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      e: ['둔화'],
+      r: ['수면'],
+      cc: ['둔화', '수면']
     }
   },
   {
@@ -645,9 +705,9 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      e: ['그랩'],
+      r: ['둔화', '추방'],
+      cc: ['그랩', '둔화', '추방']
     }
   },
   {
@@ -662,12 +722,12 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
-      q: [''],
+      p: ['저지 불가'],
+      q: ['둔화'],
       w: [''],
       e: [''],
       r: [''],
-      cc: ['']
+      cc: ['저지 불가', '둔화']
     }
   },
   {
@@ -683,11 +743,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['넉백'],
       w: [''],
       e: [''],
-      r: [''],
-      cc: ['']
+      r: ['저지 불가', '에어본', '기절'],
+      cc: ['넉백', '저지 불가', '에어본', '기절']
     }
   },
   {
@@ -704,10 +764,10 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['에어본', '둔화'],
       e: [''],
       r: [''],
-      cc: ['']
+      cc: ['에어본', '둔화']
     }
   },
   {
@@ -723,11 +783,11 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['기절'],
       w: [''],
-      e: [''],
-      r: [''],
-      cc: ['']
+      e: ['둔화'],
+      r: ['저지 불가', '둔화'],
+      cc: ['기절', '둔화', '저지 불가']
     }
   },
   {
@@ -745,8 +805,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['그랩', '둔화', '기절'],
+      r: ['제압', '저지 불가', '둔화'],
       cc: ['']
     }
   },
@@ -766,7 +826,7 @@ export const championInfo: championInfoType[] = [
       q: [''],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['저지 불가', '그랩'],
       cc: ['']
     }
   },
@@ -785,8 +845,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화', '기절'],
+      r: ['제압'],
       cc: ['']
     }
   },
@@ -803,10 +863,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      q: ['에어본'],
+      w: ['둔화'],
+      e: ['둔화'],
+      r: ['넉백', '피해 면역'],
       cc: ['']
     }
   },
@@ -823,8 +883,8 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['에어본'],
+      w: ['둔화', '그랩'],
       e: [''],
       r: [''],
       cc: ['']
@@ -843,10 +903,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['에어본'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['에어본'],
       cc: ['']
     }
   },
@@ -864,9 +924,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['투명'],
       e: [''],
-      r: [''],
+      r: ['에어본'],
       cc: ['']
     }
   },
@@ -883,10 +943,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['방해 효과 해제', '저지 불가'],
       cc: ['']
     }
   },
@@ -904,8 +964,8 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['넉백'],
+      e: ['둔화'],
       r: [''],
       cc: ['']
     }
@@ -925,8 +985,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['기절', '방해 효과 면역'],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -943,10 +1003,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['기절', '넉백'],
+      r: ['둔화', '제압', '공포', '처형'],
       cc: ['']
     }
   },
@@ -963,10 +1023,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['저지 불가'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['공포'],
+      r: ['저지 불가', '제압'],
       cc: ['']
     }
   },
@@ -985,8 +1045,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['기절'],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -1005,8 +1065,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['저지 불가'],
       cc: ['']
     }
   },
@@ -1025,7 +1085,7 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
+      e: ['기절', '기본 공격 면역'],
       r: [''],
       cc: ['']
     }
@@ -1043,9 +1103,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
-      e: [''],
+      e: ['넉백'],
       r: [''],
       cc: ['']
     }
@@ -1064,9 +1124,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['둔화'],
+      e: ['기절', '넉백'],
+      r: ['대상 지정 불가', '저지 불가', '침묵(정신 집중 해제)', '넉백'],
       cc: ['']
     }
   },
@@ -1084,9 +1144,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['둔화', '에어본'],
+      e: ['둔화 효과 면역'],
+      r: ['대상 지정 불가'],
       cc: ['']
     }
   },
@@ -1103,10 +1163,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['모든 피해 면역'],
       cc: ['']
     }
   },
@@ -1122,11 +1182,11 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
-      q: [''],
+      p: ['대상 지정 불가'],
+      q: ['그랩', '둔화', '절대 시야'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['절대 시야'],
+      r: ['저지 불가', '넉백'],
       cc: ['']
     }
   },
@@ -1143,9 +1203,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
-      e: [''],
+      e: ['넉백', '둔화'],
       r: [''],
       cc: ['']
     }
@@ -1164,9 +1224,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['둔화'],
       e: [''],
-      r: [''],
+      r: ['불사'],
       cc: ['']
     }
   },
@@ -1184,9 +1244,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['기절'],
+      e: ['피해 면역'],
+      r: ['대상 지정 불가', '둔화'],
       cc: ['']
     }
   },
@@ -1204,8 +1264,8 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['방해 효과 면역', '피해 면역', '둔화', '공격 속도 감소', '기절'],
+      e: ['둔화'],
       r: [''],
       cc: ['']
     }
@@ -1225,8 +1285,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['넉백'],
+      r: ['저지 불가', '공포'],
       cc: ['']
     }
   },
@@ -1244,7 +1304,7 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['둔화', '시야 차단'],
       e: [''],
       r: [''],
       cc: ['']
@@ -1265,7 +1325,7 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
+      e: ['넉백', '둔화'],
       r: [''],
       cc: ['']
     }
@@ -1305,7 +1365,7 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
+      e: ['둔화'],
       r: [''],
       cc: ['']
     }
@@ -1325,8 +1385,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['속박'],
       cc: ['']
     }
   },
@@ -1345,8 +1405,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['넉백', '기절'],
+      r: ['투명'],
       cc: ['']
     }
   },
@@ -1362,7 +1422,7 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
+      p: ['에어본'],
       q: [''],
       w: [''],
       e: [''],
@@ -1384,8 +1444,8 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['속박'],
+      e: ['위장', '대상 지정 불가'],
       r: [''],
       cc: ['']
     }
@@ -1424,7 +1484,7 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['위장'],
       e: [''],
       r: [''],
       cc: ['']
@@ -1442,11 +1502,11 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
-      q: [''],
+      p: ['둔화'],
+      q: ['속박'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -1462,11 +1522,11 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: [''],
-      q: [''],
-      w: [''],
+      p: ['둔화'],
+      q: ['둔화'],
+      w: ['둔화'],
       e: [''],
-      r: [''],
+      r: ['기절', '둔화'],
       cc: ['']
     }
   },
@@ -1505,8 +1565,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['속박'],
+      r: ['대상 지정 불가'],
       cc: ['']
     }
   },
@@ -1524,7 +1584,7 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['둔화'],
       e: [''],
       r: [''],
       cc: ['']
@@ -1544,9 +1604,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['속박'],
+      e: ['둔화'],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -1564,8 +1624,8 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['둔화'],
+      e: ['속박'],
       r: [''],
       cc: ['']
     }
@@ -1584,8 +1644,8 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['절대 시야'],
+      e: ['투명'],
       r: [''],
       cc: ['']
     }
@@ -1605,8 +1665,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['경직', '대상 지정 불가', '저지 불가', '넉백'],
       cc: ['']
     }
   },
@@ -1624,9 +1684,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['속박, 절대 시야'],
+      e: ['둔화'],
+      r: ['절대 시야'],
       cc: ['']
     }
   },
@@ -1645,7 +1705,7 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
+      e: ['둔화'],
       r: [''],
       cc: ['']
     }
@@ -1664,7 +1724,7 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['저지 불가', '넉백', '둔화'],
       e: [''],
       r: [''],
       cc: ['']
@@ -1683,9 +1743,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['시야 차단'],
       w: [''],
-      e: [''],
+      e: ['넉백', '둔화'],
       r: [''],
       cc: ['']
     }
@@ -1705,8 +1765,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['불사'],
       cc: ['']
     }
   },
@@ -1724,9 +1784,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['둔화'],
       e: [''],
-      r: [''],
+      r: ['넉백'],
       cc: ['']
     }
   },
@@ -1743,8 +1803,8 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['위장'],
+      w: ['둔화'],
       e: [''],
       r: [''],
       cc: ['']
@@ -1762,11 +1822,11 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: [''],
-      q: [''],
+      p: ['투명'],
+      q: ['실명'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -1784,9 +1844,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['투명'],
+      e: ['속박'],
+      r: ['기절'],
       cc: ['']
     }
   },
@@ -1804,9 +1864,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['둔화', '속박'],
       e: [''],
-      r: [''],
+      r: ['대상 지정 불가', '경직'],
       cc: ['']
     }
   },
@@ -1823,9 +1883,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['속박'],
       w: [''],
-      e: [''],
+      e: ['둔화'],
       r: [''],
       cc: ['']
     }
@@ -1842,11 +1902,11 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: [''],
-      q: [''],
-      w: [''],
+      p: ['둔화'],
+      q: ['둔화'],
+      w: ['속박'],
       e: [''],
-      r: [''],
+      r: ['기절', '경직', '둔화'],
       cc: ['']
     }
   },
@@ -1862,11 +1922,11 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: [''],
-      q: [''],
+      p: ['방해 효과 면역'],
+      q: ['침묵'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['제압'],
       cc: ['']
     }
   },
@@ -1883,10 +1943,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['속박'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['방해 효과 면역'],
+      r: ['둔화', '기절', '절대 시야'],
       cc: ['']
     }
   },
@@ -1905,7 +1965,7 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
+      e: ['기절'],
       r: [''],
       cc: ['']
     }
@@ -1922,11 +1982,11 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
+      p: ['공포', '이동기 방해'],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['저지 불가'],
       cc: ['']
     }
   },
@@ -1943,10 +2003,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['에어본', '넉백'],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -1963,10 +2023,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['기절'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -1984,8 +2044,8 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['대상 지정 불가', '둔화'],
+      e: ['둔화'],
       r: [''],
       cc: ['']
     }
@@ -2004,9 +2064,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['둔화', '기절'],
       e: [''],
-      r: [''],
+      r: ['정신 집중 방해'],
       cc: ['']
     }
   },
@@ -2023,9 +2083,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
-      e: [''],
+      e: ['기절', '에어본'],
       r: [''],
       cc: ['']
     }
@@ -2045,8 +2105,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화', '속박', '기절'],
+      r: ['매혹'],
       cc: ['']
     }
   },
@@ -2064,9 +2124,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['둔화'],
+      e: ['속박', '그랩'],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -2084,9 +2144,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['둔화'],
+      e: ['넉백', '기절', '둔화'],
+      r: ['처형'],
       cc: ['']
     }
   },
@@ -2105,7 +2165,7 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
+      e: ['매혹'],
       r: [''],
       cc: ['']
     }
@@ -2125,8 +2185,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['끌어당김', '처형'],
+      r: ['기절', '에어본', '둔화'],
       cc: ['']
     }
   },
@@ -2143,10 +2203,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['넉백'],
       cc: ['']
     }
   },
@@ -2162,7 +2222,7 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: [''],
+      p: ['기절'],
       q: [''],
       w: [''],
       e: [''],
@@ -2183,10 +2243,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['둔화', '기절'],
+      w: ['넉백'],
       e: [''],
-      r: [''],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -2205,7 +2265,7 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
+      e: ['기절', '대상 지정 불가'],
       r: [''],
       cc: ['']
     }
@@ -2224,9 +2284,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['둔화'],
       e: [''],
-      r: [''],
+      r: ['그랩'],
       cc: ['']
     }
   },
@@ -2244,9 +2304,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['절대 시야'],
+      e: ['속박', '둔화'],
+      r: ['에어본'],
       cc: ['']
     }
   },
@@ -2264,8 +2324,8 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['둔화'],
+      e: ['기절'],
       r: [''],
       cc: ['']
     }
@@ -2285,7 +2345,7 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
+      e: ['수면'],
       r: [''],
       cc: ['']
     }
@@ -2304,8 +2364,8 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['넉백'],
+      e: ['둔화'],
       r: [''],
       cc: ['']
     }
@@ -2323,8 +2383,8 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['둔화'],
+      w: ['속박'],
       e: [''],
       r: [''],
       cc: ['']
@@ -2344,7 +2404,7 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['둔화'],
       e: [''],
       r: [''],
       cc: ['']
@@ -2364,9 +2424,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['고정', '둔화'],
       e: [''],
-      r: [''],
+      r: ['기절', '둔화'],
       cc: ['']
     }
   },
@@ -2382,7 +2442,7 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
+      p: ['기절'],
       q: [''],
       w: [''],
       e: [''],
@@ -2403,10 +2463,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      q: ['둔화'],
+      w: ['넉백'],
+      e: ['둔화', '넉백', '기절'],
+      r: ['넉백'],
       cc: ['']
     }
   },
@@ -2424,9 +2484,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['기절', '둔화'],
       e: [''],
-      r: [''],
+      r: ['절대 시야'],
       cc: ['']
     }
   },
@@ -2443,9 +2503,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['공포'],
       w: [''],
-      e: [''],
+      e: ['둔화', '침묵'],
       r: [''],
       cc: ['']
     }
@@ -2463,9 +2523,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
-      e: [''],
+      e: ['둔화', '기절'],
       r: [''],
       cc: ['']
     }
@@ -2484,9 +2544,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['도발'],
+      e: ['넉백'],
+      r: ['대상 지정 불가', '넉백'],
       cc: ['']
     }
   },
@@ -2502,11 +2562,11 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
-      q: [''],
+      p: ['속박'],
+      q: ['그랩', '기절'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['에어본', '기절'],
       cc: ['']
     }
   },
@@ -2524,9 +2584,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['에어본'],
+      e: ['둔화', '속박'],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -2543,10 +2603,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['넉백'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['도발'],
+      r: ['저지 불가', '둔화', '에어본'],
       cc: ['']
     }
   },
@@ -2563,10 +2623,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['기절'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['속박'],
+      r: ['둔화', '기절'],
       cc: ['']
     }
   },
@@ -2584,9 +2644,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      w: ['에어본', '넉백'],
+      e: ['기절'],
+      r: ['그랩', '끌어당김'],
       cc: ['']
     }
   },
@@ -2603,10 +2663,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      q: ['둔화', '넉백'],
+      w: ['대상 지정 불가', '속박'],
+      e: ['둔화'],
+      r: ['속박'],
       cc: ['']
     }
   },
@@ -2623,10 +2683,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['공격 속도 감소'],
+      r: ['저지 불가', '에어본'],
       cc: ['']
     }
   },
@@ -2644,10 +2704,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['그랩', '기절'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['에어본'],
+      r: ['침묵'],
       cc: ['']
     }
   },
@@ -2664,10 +2724,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      q: ['둔화'],
+      w: ['에어본', '고정', '둔화'],
+      e: ['넉백', '기절'],
+      r: ['넉백', '에어본'],
       cc: ['']
     }
   },
@@ -2684,10 +2744,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화', '에어본', '기절'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['저지 불가', '기절', '둔화'],
       cc: ['']
     }
   },
@@ -2703,11 +2763,11 @@ export const championInfo: championInfoType[] = [
       assistant: 1
     },
     spells: {
-      p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      p: ['둔화 면역'],
+      q: ['넉백'],
+      w: ['둔화'],
+      e: ['기절'],
+      r: ['기절', '둔화'],
       cc: ['']
     }
   },
@@ -2724,9 +2784,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
+      q: ['둔화'],
+      w: ['기본 공격 차단'],
+      e: ['도발'],
       r: [''],
       cc: ['']
     }
@@ -2745,8 +2805,8 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
-      e: [''],
+      w: ['둔화', '고정'],
+      e: ['넉백', '속박'],
       r: [''],
       cc: ['']
     }
@@ -2764,10 +2824,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['기절'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['기절'],
       cc: ['']
     }
   },
@@ -2784,10 +2844,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      q: ['에어본'],
+      w: ['넉백'],
+      e: ['기절'],
+      r: ['방해 효과 해제'],
       cc: ['']
     }
   },
@@ -2804,10 +2864,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      q: ['둔화'],
+      w: ['저지 불가', '넉백'],
+      e: ['에어본'],
+      r: ['둔화', '에어본'],
       cc: ['']
     }
   },
@@ -2824,10 +2884,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['에어본'],
+      w: ['둔화'],
       e: [''],
-      r: [''],
+      r: ['저지 불가'],
       cc: ['']
     }
   },
@@ -2844,10 +2904,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화', '그랩'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['넉백'],
+      r: ['넉백', '둔화'],
       cc: ['']
     }
   },
@@ -2864,9 +2924,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
+      q: ['에어본', '둔화'],
+      w: ['침묵'],
+      e: ['둔화'],
       r: [''],
       cc: ['']
     }
@@ -2884,10 +2944,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['둔화', '기절', '그랩'],
+      w: ['저지 불가', '넉백', '기절'],
       e: [''],
-      r: [''],
+      r: ['넉백', '기절', '저지 불가'],
       cc: ['']
     }
   },
@@ -2904,10 +2964,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['기절', '에어본'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['넉백', '둔화'],
       cc: ['']
     }
   },
@@ -2925,9 +2985,9 @@ export const championInfo: championInfoType[] = [
     spells: {
       p: [''],
       q: [''],
-      w: [''],
+      w: ['에어본'],
       e: [''],
-      r: [''],
+      r: ['매혹'],
       cc: ['']
     }
   },
@@ -2944,10 +3004,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['속박', '넉백', '기절'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['광란'],
       cc: ['']
     }
   },
@@ -2964,10 +3024,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      q: ['둔화'],
+      w: ['변이'],
+      e: ['절대 시야'],
+      r: ['넉백', '둔화'],
       cc: ['']
     }
   },
@@ -2983,11 +3043,11 @@ export const championInfo: championInfoType[] = [
       assistant: 3
     },
     spells: {
-      p: [''],
-      q: [''],
+      p: ['둔화'],
+      q: ['둔화', '기절'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['경직'],
       cc: ['']
     }
   },
@@ -3003,11 +3063,11 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: [''],
-      q: [''],
+      p: ['기절'],
+      q: ['둔화'],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['에어본', '둔화'],
       cc: ['']
     }
   },
@@ -3023,11 +3083,11 @@ export const championInfo: championInfoType[] = [
       assistant: 2
     },
     spells: {
-      p: [''],
+      p: ['둔화'],
       q: [''],
       w: [''],
       e: [''],
-      r: [''],
+      r: ['기절'],
       cc: ['']
     }
   },
@@ -3044,9 +3104,9 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['둔화'],
       w: [''],
-      e: [''],
+      e: ['침묵', '속박'],
       r: [''],
       cc: ['']
     }
@@ -3064,10 +3124,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['기절', '그랩', '절대 시야'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['넉백', '둔화'],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -3084,10 +3144,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['속박'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['에어본'],
       cc: ['']
     }
   },
@@ -3104,10 +3164,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['둔화'],
+      w: ['대상 지정 불가'],
       e: [''],
-      r: [''],
+      r: ['둔화'],
       cc: ['']
     }
   },
@@ -3124,10 +3184,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['에어본'],
+      w: ['둔화'],
       e: [''],
-      r: [''],
+      r: ['넉백'],
       cc: ['']
     }
   },
@@ -3144,10 +3204,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
+      q: ['기절'],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['둔화'],
+      r: ['경직'],
       cc: ['']
     }
   },
@@ -3166,8 +3226,8 @@ export const championInfo: championInfoType[] = [
       p: [''],
       q: [''],
       w: [''],
-      e: [''],
-      r: [''],
+      e: ['기절'],
+      r: ['모든 피해 면역'],
       cc: ['']
     }
   },
@@ -3184,10 +3244,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
+      q: ['둔화', '기절'],
+      w: ['에어본'],
       e: [''],
-      r: [''],
+      r: ['대상 지정 불가', '제압'],
       cc: ['']
     }
   },
@@ -3204,10 +3264,10 @@ export const championInfo: championInfoType[] = [
     },
     spells: {
       p: [''],
-      q: [''],
-      w: [''],
-      e: [''],
-      r: [''],
+      q: ['그랩', '둔화'],
+      w: ['위장'],
+      e: ['기절'],
+      r: ['처형'],
       cc: ['']
     }
   },
